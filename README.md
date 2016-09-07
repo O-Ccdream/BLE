@@ -12,3 +12,4 @@ BLE 学习以及仿写nearlock功能心得
 ###CoreBluetooth介绍
 CoreBluetooth框架里其实就两个东西，一个外设（peripheral）一个中心（central），他们分别有对应的API如下图：
 ![](http://img.blog.csdn.net/20140523195339187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcG9ueV9tYWdnaWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+我这里设计思路为MAC作为central，iPhone作为peripheral，当peripheral与central的距离达到一定界限，出发central端某个方法，执行我想做的事情，所以上述API我基本上都有用到。先写到这，发送数据还没有研究透，完了再来。
